@@ -12,12 +12,13 @@ console.log("Let's check how well do you know me?");
 //},0);
 
 //setTimeout(function(){
-    var testUser = readLineSync.question("If you want to know details of current highest user, type 'HS' in terminal else hit Enter!\n");
+    var testUser = readLineSync.question("If you want to know details of current highest user, type 'HS' in terminal else hit 'Enter'!\n");
 //},0);
 
 while(testUser != ""){
     if(testUser === "HS"){
         console.log("The current highest score is " + currHighestUser.currHighScore + " by " + currHighestUser.username + " !");
+        console.log("Hit 'Enter' to exit or 'HS' to view once again.");
     }
     testUser = readLineSync.question();
 }
