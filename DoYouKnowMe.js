@@ -70,7 +70,7 @@ var question6 = {
     currHighestUser.currHighScore = score;
 
     console.log("");
-    console.log("Congratulations " + currHighestUser.username + "! You have the highest score right now with " + currHighestUser.currHighScore + " !\n");
+    console.log("Congratulations " + currHighestUser.username + "! You have the highest score right now with " + currHighestUser.currHighScore + " points!\n");
   }
 
   // Project is done here. Below code is for testing purposes
@@ -84,14 +84,14 @@ var question6 = {
     //KeyInSelect testing
     var presidents = ["Man Mohan Singh", "Ram Nath Govind", "Prithviraj Chauhan", "Arun Jaitley"];
     var presAnswer = readLineSync.keyInSelect(presidents, "Who is the current president of India? ");
-    presAnswer--;
+
+    presAnswer++;
+
     if(presAnswer == 2){
         console.log("Your answer is correct!");
     }else if (presAnswer == 3){
         console.log("Your meme knowledge is strong.");
-    }
-    console.log(presAnswer);
-
+    }else console.log("Your answer is wrong!");
 
 
   var leapYrName = readLineSync.question("Enter your name: ");
