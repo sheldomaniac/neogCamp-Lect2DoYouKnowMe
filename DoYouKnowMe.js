@@ -37,7 +37,7 @@ var question3 = {
 };
 
 var question4 = {
-    question: "What is your favorite family vacation? ", answer: "mumbai"
+    question: "What is my favorite family vacation? ", answer: "mumbai"
 };
 
 var question5 = {
@@ -91,7 +91,7 @@ var question6 = {
     }
     console.log(presAnswer);
 
-  } 
+
 
   var leapYrName = readLineSync.question("Enter your name: ");
   function inputleapYr(){
@@ -120,3 +120,4 @@ var question6 = {
 
   if(isAleapYear === true) console.log("Congratulations! You were born in a leap year!!!");
   else console.log("You were not born on a leap year...")
+}
