@@ -4,6 +4,8 @@ var readLineSync = require('readline-sync');
 
 var currHighestUser = {username:"1234", currHighScore: 4};
 
+var currentUser = readLineSync.question("Please enter your name to begin: ");
+
 console.log("Let's check how well do you know me?");
 
 
@@ -63,10 +65,10 @@ var question6 = {
   console.log(question6.question + question6.answer);
   score++;
   
-  console.log("Your score is ",score);
+  console.log("Well done ",currentUser," your score is ",score);
   
   if(score > currHighestUser.currHighScore){
-    currHighestUser.username = readLineSync.question("You have the current highest score!!! Please enter your name: ");
+    currHighestUser.username = currentUser;
     currHighestUser.currHighScore = score;
 
     console.log("");
