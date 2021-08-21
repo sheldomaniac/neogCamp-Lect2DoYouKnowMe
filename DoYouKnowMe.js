@@ -4,7 +4,7 @@ var readLineSync = require('readline-sync');
 
 var currHighestUser = {username:"1234", currHighScore: 4};
 
-var currentUser = readLineSync.question("Please enter your name to begin: ");
+var currentUser = readLineSync.question("Please enter your name to begin: "); 
 
 console.log("Let's check how well do you know me?");
 
